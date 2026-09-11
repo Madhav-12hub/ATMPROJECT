@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | ATM Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+        <div class="login-left">
+
+            <div class="bank-logo">
+                <img src="Screenshot 2026-09-08 201250.png" alt="ATM Bank">
+            </div>
+
+            <div class="login-content">
+
+                <p class="eyebrow">SECURE DIGITAL BANKING</p>
+
+                <h1>
+                    Welcome<br>
+                    <span>back.</span>
+                </h1>
+
+                <p class="description">
+                    Access your account securely and manage your
+                    money with simple, smarter banking.
+                </p>
+
+                <div class="security-note">
+                    🔒 Your banking information is securely protected
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="login-right">
+
+            <div class="login-card">
+
+                <p class="card-eyebrow">WELCOME BACK</p>
+
+                <h2>Login to your account</h2>
+
+                <p class="card-description">
+                    Enter your account details to continue.
+                </p>
+
+
+                <!-- LOGIN FORM -->
+                <form action="login" method="post">
+                
+
+                    <!-- ACCOUNT NUMBER -->
+                    <div class="form-group">
+
+                        <label for="accountNumber">
+                            Account Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="accountNumber"
+                            name="accountNumber"
+                            placeholder="Enter your account number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PIN -->
+                    <div class="form-group">
+
+                        <label for="pin">
+                            PIN
+                        </label>
+
+                        <input
+                            type="password"
+                            id="pin"
+                            name="pin"
+                            placeholder="Enter your 4-digit PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+                    <button type="submit" class="login-button">
+                        Login
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+
+                <!-- CREATE ACCOUNT -->
+                <div class="signup-link">
+
+                    <span>Don't have an account?</span>
+
+                    <a href="create-account.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Account Created | ATM Bank</title>
+<link rel="stylesheet"
+          href="style.css">
+</head>
+<body>
+<div class ="success-page">
+ <div class="success-card">
+  <div class="success-icon"> ✓</div>
+  
+  <p class="success-label"> ACCOUNT CREATED </p>
+  
+ <h1>
+     Welcome to ATM Bank
+ </h1>
+ 
+ <P class="success-message"> Your Banck Account has been Successfully Created. </P>
+ 
+ <div class="account-box">
+ 
+ <span>
+ Your Account Number
+ </span>
+ <strong id="accountNumber">
+ Loading.....
+ </strong>
+ </div>
+
+ <p class="security-note">
+                🔒 Keep your account number and PIN secure.
+            </p>
+            
+    <a href="login.html"
+               class="success-button">
+
+                Continue to Login
+                <span>→</span>      
+     </a>  
+     
+         </div>
+
+    </div>
+    
+ 
+    
+    
+<script>
+
+        // Get account number from URL
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const account =
+            params.get("account");
+
+
+        if (account) {
+
+            document.getElementById(
+                "accountNumber"
+            ).textContent = account;
+
+        }
+
+    </script>
+
+</body>
+</html>

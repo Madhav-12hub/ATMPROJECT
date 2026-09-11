@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Change PIN | ATM Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-left">
+
+            <div class="bank-logo">
+
+                <img src="Screenshot 2026-09-08 201250.png"
+                     alt="ATM Bank">
+
+            </div>
+
+            <div class="login-content">
+
+                <p class="eyebrow">
+                    ATM SERVICES
+                </p>
+
+                <h1>
+                    Change<br>
+                    <span>PIN.</span>
+                </h1>
+
+                <p class="description">
+                    Update your ATM PIN securely.
+                </p>
+
+                <div class="security-note">
+                    🔒 Your banking information is securely protected
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-right">
+
+            <div class="login-card">
+
+                <p class="card-eyebrow">
+                    SECURITY
+                </p>
+
+                <h2>
+                    Change your PIN
+                </h2>
+
+                <p class="card-description">
+                    Enter your current PIN and choose a new PIN.
+                </p>
+
+
+                <!-- CHANGE PIN FORM -->
+
+                <form action="change-pin" method="post">
+
+                    <!-- CURRENT PIN -->
+
+                    <div class="form-group">
+
+                        <label for="currentPin">
+                            Current PIN
+                        </label>
+
+                        <input
+                            type="password"
+                            id="currentPin"
+                            name="currentPin"
+                            placeholder="Enter current PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- NEW PIN -->
+
+                    <div class="form-group">
+
+                        <label for="newPin">
+                            New PIN
+                        </label>
+
+                        <input
+                            type="password"
+                            id="newPin"
+                            name="newPin"
+                            placeholder="Enter new 4-digit PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONFIRM PIN -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPin">
+                            Confirm New PIN
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPin"
+                            name="confirmPin"
+                            placeholder="Re-enter new PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+
+                    <button type="submit"
+                            class="login-button">
+
+                        Change PIN
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- BACK -->
+
+                <div class="signup-link">
+
+                    <a href="dashboard.jsp">
+                        ← Back to Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

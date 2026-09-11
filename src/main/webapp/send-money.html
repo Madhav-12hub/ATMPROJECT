@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Send Money | ATM Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="login-page">
+
+    <div class="login-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-left">
+
+            <div class="bank-logo">
+
+                <img src="Screenshot 2026-09-08 201250.png"
+                     alt="ATM Bank">
+
+            </div>
+
+
+            <div class="login-content">
+
+                <p class="eyebrow">
+                    SECURE DIGITAL BANKING
+                </p>
+
+                <h1>
+
+                    Send<br>
+
+                    <span>money.</span>
+
+                </h1>
+
+                <p class="description">
+
+                    Transfer money securely to another
+                    ATM Bank account.
+
+                </p>
+
+                <div class="security-note">
+
+                    🔒 Your banking information is securely protected
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-right">
+
+            <div class="login-card">
+
+                <p class="card-eyebrow">
+                    MONEY TRANSFER
+                </p>
+
+                <h2>
+                    Send Money
+                </h2>
+
+                <p class="card-description">
+
+                    Enter the receiver's details to transfer money.
+
+                </p>
+
+
+                <!-- SEND MONEY FORM -->
+
+                <form action="transfer"
+                      method="post">
+
+
+                    <!-- RECEIVER ACCOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="receiverAccount">
+
+                            Receiver Account Number
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="receiverAccount"
+                            name="receiverAccount"
+                            placeholder="Enter receiver account number"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="amount">
+
+                            Amount
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            name="amount"
+                            placeholder="Enter amount"
+                            min="1"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PIN -->
+
+                    <div class="form-group">
+
+                        <label for="pin">
+
+                            Enter PIN
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="pin"
+                            name="pin"
+                            placeholder="Enter your 4-digit PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SEND BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="login-button">
+
+                        Send Money
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- BACK TO DASHBOARD -->
+
+                <div class="signup-link">
+
+                    <span>
+                        Want to go back?
+                    </span>
+
+                    <a href="dashboard.jsp">
+
+                        Dashboard
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
