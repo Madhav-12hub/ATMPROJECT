@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
+	static Connection con = null;
+	
 	  private static final String URL =
 	            "jdbc:mysql://localhost:3306/atm_db";
 
@@ -14,7 +16,7 @@ public class DBConnection {
 
 	    public static Connection getConnection() {
 
-	        Connection con = null;
+	        
 
 	        try {
 
