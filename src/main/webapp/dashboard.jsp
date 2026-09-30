@@ -1,4 +1,4 @@
-<%@ page import="com.atm.model.Account" %>
+<%@ page import= "com.atm.model.Account" %>
 <%@ page import="com.atm.dao.TransactionDAO" %>
 <%@ page import="com.atm.model.MonthlyTransaction" %>
 <%@ page import="java.util.List" %>

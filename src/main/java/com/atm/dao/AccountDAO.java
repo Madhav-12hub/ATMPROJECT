@@ -29,7 +29,9 @@ public class AccountDAO {
 		  System.out.println("Rows inserted: " + row);
 		
 		if(row>0) {
-			
+			System.out.println(
+                    "entered into idf statements"
+                );
 			ResultSet rs=pt.getGeneratedKeys();
 			
 			if (rs.next()) {

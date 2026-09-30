@@ -10,7 +10,7 @@ public class DBConnection {
 
 	    private static final String USER = "root";
 
-	    private static final String PASSWORD = System.getenv("DB_PASSWORD");
+	    private static final String PASSWORD = "Madhav@24";
 
 	    public static Connection getConnection() {
 

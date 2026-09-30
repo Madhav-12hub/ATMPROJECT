@@ -11,14 +11,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/deposit")
+@WebServlet("/deposit") // web service 
 public class DepositServlet extends HttpServlet{
 	
 	 private AccountDAO accountDAO = new AccountDAO();
 	 
 	 protected void doPost(HttpServletRequest request,
              HttpServletResponse response)
-             throws IOException {
+             throws IOException { // act as controller
 		 
 		  HttpSession session = request.getSession(false);
 		  
